@@ -7,14 +7,177 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Title</title>
+    <title>Friend Finder: Survery</title>
 </head>
 
 <body>
 
-    <p><a href="/api/tables">API Table Link</a> | <a href="https://github.com/thePROZACH25/FriendFinder">GitHub Repo</a>
-    </p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Jumbotron -->
+                <div class="jumbotron">
+                    <div class="row justify-content-center">
+                        <h1 class="display-4"><i class="material-icons" style="font-size:45px">list</i> Survey Questions</h1>
+                    </div>
+                </div>
+                <hr>
+                <!-- Name and Photo input form -->
+                <h2><strong>About You</strong></h2>
+                <form>
+                    <div class="form-group">
+                        <!-- Name input -->
+                        <label for="nameInput"><strong>Name (Required)</strong></label>
+                        <input type="text" class="form-control" id="name" placeholder="input name">
+                    </div>
+                    <div class="form-group">
+                        <!-- Img url input -->
+                        <label for="imgUrl"><strong>Link to Photo Image (Required)</strong></label>
+                        <input type="text" class="form-control" id="image" placeholder="input img link">
+                    </div>
+                </form>
+                <hr>
+                <!-- Questions Form -->
+                <div class="container" id="questionsForm">
+                    <!-- Question One -->
+                    <h3><strong>Question 1</strong></h3>
+                    <h5><strong>About You</strong></h5>
+                    <select class="custom-select" id="quest1">
+                        <option selected>Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Question Two -->
+                    <h3><strong>Question 2</strong></h3>
+                    <h5><strong>About You</strong></h5>
+                    <select class="custom-select" id="quest2">
+                        <option selected>Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Question Three -->
+                    <h3><strong>Question 3</strong></h3>
+                    <h5><strong>About You</strong></h5>
+                    <select class="custom-select" id="quest3">
+                        <option selected>Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Question Four -->
+                    <h3><strong>Question 4</strong></h3>
+                    <h5><strong>About You</strong></h5>
+                    <select class="custom-select" id="quest4">
+                        <option selected>Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Question Five -->
+                    <h3><strong>Question 5</strong></h3>
+                    <h5><strong>About You</strong></h5>
+                    <select class="custom-select" id="quest5">
+                        <option selected>Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Question Six -->
+                    <h3><strong>Question 6</strong></h3>
+                    <h5><strong>About You</strong></h5>
+                    <select class="custom-select" id="quest6">
+                        <option selected>Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Question Seven -->
+                    <h3><strong>Question 7</strong></h3>
+                    <h5><strong>About You</strong></h5>
+                    <select class="custom-select" id="quest7">
+                        <option selected>Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Question Eight -->
+                    <h3><strong>Question 8</strong></h3>
+                    <h5><strong>About You</strong></h5>
+                    <select class="custom-select" id="quest8">
+                        <option selected>Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Question Nine -->
+                    <h3><strong>Question 9</strong></h3>
+                    <h5><strong>About You</strong></h5>
+                    <select class="custom-select" id="quest9">
+                        <option selected>Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Question Ten -->
+                    <h3><strong>Question 10</strong></h3>
+                    <h5><strong>About You</strong></h5>
+                    <select class="custom-select" id="quest10">
+                        <option selected>Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <hr>
+                <!-- Links to API table and GitHub Repo -->
+                <p><a href="/api/tables">API Table Link</a> | <a
+                        href="https://github.com/thePROZACH25/FriendFinder">GitHub Repo</a>
+                </p>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
