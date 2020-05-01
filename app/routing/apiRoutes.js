@@ -4,4 +4,13 @@ module.exports = function(app){
     app.get("/api/friends", function(req, res){
         res.json(friendsData);
     });
+
+    app.post("/api/friends", function(req, res){
+        var totalDiffer = 0;
+        var bestMatch ={
+            name: "",
+            photo: "",
+            friendDifference: 1000
+        }; 
+    });
 };

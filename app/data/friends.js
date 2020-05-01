@@ -1,4 +1,4 @@
-var fiendsArr = [
+var friendsArr = [
   {
     name: "Ahmed",
     photo:
@@ -8,4 +8,4 @@ var fiendsArr = [
 ];
 
 
-module.exports = fiendsArr;
+module.exports = friendsArr;
