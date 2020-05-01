@@ -1,3 +1,4 @@
+// Friends array to hold friends to match
 var friendsArr = [
   {
     name: "Ahmed",
@@ -7,5 +8,5 @@ var friendsArr = [
   },
 ];
 
-
+// Export for Friends Array
 module.exports = friendsArr;

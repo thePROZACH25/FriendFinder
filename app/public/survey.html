@@ -25,7 +25,8 @@
                 <!-- Jumbotron -->
                 <div class="jumbotron">
                     <div class="row justify-content-center">
-                        <h1 class="display-4"><i class="material-icons" style="font-size:45px">list</i> Survey Questions</h1>
+                        <h1 class="display-4"><i class="material-icons" style="font-size:45px">list</i> Survey Questions
+                        </h1>
                     </div>
                 </div>
                 <hr>
@@ -176,12 +177,42 @@
                     </select>
                 </div>
                 <br>
-                <button type="button" class="btn btn-primary btn-lg btn-block"><i class='fas fa-hands-helping' style='font-size:20px'></i> Submit Answers</button>
+
+                <!-- Submit Button -->
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal"
+                    data-target="#exampleModal"><i class='fas fa-hands-helping' style='font-size:20px'></i> Submit
+                    Answers</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="exampleModalLabel">Your Match</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h4 id="match-name">Match</h4>
+                                <img id="match-img" style="width:300px;height:300px;"
+                                    src="https://cdn.clipart.email/b548162aa2e4c3cb5555ac59313c6c71_15-best-photos-of-you-are-here-arrow-icon-you-are-here-arrow-_900-900.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <hr>
                 <!-- Links to API table and GitHub Repo -->
                 <footer class="footer">
                     <div class="container">
-                        <p><a href="/api/friends">API Table Link</a> | <a href="https://github.com/thePROZACH25/FriendFinder">GitHub Repo</a>
+                        <p><a href="/api/friends">API Table Link</a> | <a
+                                href="https://github.com/thePROZACH25/FriendFinder">GitHub Repo</a>
                         </p>
                     </div>
                 </footer>
