@@ -36,12 +36,12 @@
                     <div class="form-group">
                         <!-- Name input -->
                         <label for="nameInput"><strong>Name (Required)</strong></label>
-                        <input type="text" class="form-control" id="name" placeholder="input name">
+                        <input type="text" class="form-control" id="name" placeholder="input name" required>
                     </div>
                     <div class="form-group">
                         <!-- Img url input -->
                         <label for="imgUrl"><strong>Link to Photo Image (Required)</strong></label>
-                        <input type="text" class="form-control" id="image" placeholder="input img link">
+                        <input type="text" class="form-control" id="image" placeholder="input img link" required="">
                     </div>
                 </form>
                 <hr>
@@ -50,8 +50,8 @@
                     <!-- Question One -->
                     <h3><strong>Question 1</strong></h3>
                     <h5><strong>I love Pokemon Go.</strong></h5>
-                    <select class="custom-select" id="quest1">
-                        <option selected>Select an Option</option>
+                    <select class="chosen-select" id="quest1" required>
+                        <option value="">Select an Option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -63,8 +63,8 @@
                     <!-- Question Two -->
                     <h3><strong>Question 2</strong></h3>
                     <h5><strong>Space is fake.</strong></h5>
-                    <select class="custom-select" id="quest2">
-                        <option selected>Select an Option</option>
+                    <select class="chosen-select" id="quest2" required>
+                        <option value="">Select an Option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -76,8 +76,8 @@
                     <!-- Question Three -->
                     <h3><strong>Question 3</strong></h3>
                     <h5><strong>Blue Eyes White Dragon can always bet the Dark Magician.</strong></h5>
-                    <select class="custom-select" id="quest3">
-                        <option selected>Select an Option</option>
+                    <select class="chosen-select" id="quest3" required>
+                        <option value="">Select an Option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -89,8 +89,8 @@
                     <!-- Question Four -->
                     <h3><strong>Question 4</strong></h3>
                     <h5><strong>Lora Croft is the best female action hero.</strong></h5>
-                    <select class="custom-select" id="quest4">
-                        <option selected>Select an Option</option>
+                    <select class="chosen-select" id="quest4" required>
+                        <option value="">Select an Option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -102,8 +102,8 @@
                     <!-- Question Five -->
                     <h3><strong>Question 5</strong></h3>
                     <h5><strong>The Office is "NOT" as good as people say.</strong></h5>
-                    <select class="custom-select" id="quest5">
-                        <option selected>Select an Option</option>
+                    <select class="chosen-select" id="quest5" required>
+                        <option value="">Select an Option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -115,8 +115,8 @@
                     <!-- Question Six -->
                     <h3><strong>Question 6</strong></h3>
                     <h5><strong>Iphone over Android</strong></h5>
-                    <select class="custom-select" id="quest6">
-                        <option selected>Select an Option</option>
+                    <select class="chosen-select" id="quest6" required>
+                        <option value="">Select an Option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -128,8 +128,8 @@
                     <!-- Question Seven -->
                     <h3><strong>Question 7</strong></h3>
                     <h5><strong>Strewberries are a terrible fruit.</strong></h5>
-                    <select class="custom-select" id="quest7">
-                        <option selected>Select an Option</option>
+                    <select class="chosen-select" id="quest7" required>
+                        <option value="">Select an Option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -141,8 +141,8 @@
                     <!-- Question Eight -->
                     <h3><strong>Question 8</strong></h3>
                     <h5><strong>Elon Musk will save us all.</strong></h5>
-                    <select class="custom-select" id="quest8">
-                        <option selected>Select an Option</option>
+                    <select class="chosen-select" id="quest8" required>
+                        <option value="">Select an Option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -154,8 +154,8 @@
                     <!-- Question Nine -->
                     <h3><strong>Question 9</strong></h3>
                     <h5><strong>Saitama from One Punch Man could bet Goku at any Super Saiyan level.</strong></h5>
-                    <select class="custom-select" id="quest9">
-                        <option selected>Select an Option</option>
+                    <select class="chosen-select" id="quest9" required>
+                        <option value="">Select an Option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -167,8 +167,8 @@
                     <!-- Question Ten -->
                     <h3><strong>Question 10</strong></h3>
                     <h5><strong>Are Orca Whales Evil?</strong></h5>
-                    <select class="custom-select" id="quest10">
-                        <option selected>Please Select 5 (Strongly Agree)</option>
+                    <select class="chosen-select" id="quest10" required>
+                        <option value="">Select an Option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -179,23 +179,20 @@
                 <br>
 
                 <!-- Submit Button -->
-                <button type="button" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal"
-                    data-target="#exampleModal"><i class='fas fa-hands-helping' style='font-size:20px'></i> Submit
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal"
+                    data-target="#results-modal"><i class='fas fa-hands-helping' style='font-size:20px'></i> Submit
                     Answers</button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                <div id="results-modal" class="modal fade" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
+                    <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h2 class="modal-title" id="exampleModalLabel">Your Match</h2>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
                             </div>
                             <div class="modal-body">
-                                <h4 id="match-name">Match</h4>
+                                <h4 id="match-name"></h4>
                                 <img id="match-img" style="width:300px;height:300px;"
                                     src="https://cdn.clipart.email/b548162aa2e4c3cb5555ac59313c6c71_15-best-photos-of-you-are-here-arrow-icon-you-are-here-arrow-_900-900.jpeg"
                                     alt="">
@@ -220,9 +217,11 @@
         </div>
     </div>
     <!-- Script links for JQuery and Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="survey.js"></script>
 </body>
 
 </html>

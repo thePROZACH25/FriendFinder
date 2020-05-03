@@ -1,16 +1,9 @@
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
-
-
-
-
 $("#submit").on("click", function (event) {
   event.preventDefault();
 
   var userData = {
     name: $("#name").val(),
-    photo: $("#photo").val(),
+    photo: $("#image").val(),
     scores: [
       $("#quest1").val(),
       $("#quest2").val(),
@@ -25,11 +18,24 @@ $("#submit").on("click", function (event) {
     ],
   };
 
-  $.post("/api/friends", userData, function(data){
+  console.log("FrontEnd: " + userData.name);
+  console.log("FrontEnd: " + userData.photo);
+  console.log("FrontEnd: " + userData.scores);
 
+  // $.get("/api/friends", userData, function (data) {
+  //   $("#match-name").text(data.name);
+  //   $("#match-img").attr("src", data.photo);
+
+  //   $("#results-modal").modal("toggle");
+  // });
+
+  $.ajax("/api/friends", {
+    type: "POST",
+    data: userData,
+  }).then(function (data) {
     $("#match-name").text(data.name);
     $("#match-img").attr("src", data.photo);
 
-    $('#results-modal').modal("toggle");
+    $("#results-modal").modal("toggle");
   });
 });
