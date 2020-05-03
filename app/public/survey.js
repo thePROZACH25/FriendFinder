@@ -22,20 +22,20 @@ $("#submit").on("click", function (event) {
   console.log("FrontEnd: " + userData.photo);
   console.log("FrontEnd: " + userData.scores);
 
-  // $.get("/api/friends", userData, function (data) {
-  //   $("#match-name").text(data.name);
-  //   $("#match-img").attr("src", data.photo);
-
-  //   $("#results-modal").modal("toggle");
-  // });
-
-  $.ajax("/api/friends", {
-    type: "POST",
-    data: userData,
-  }).then(function (data) {
+  $.post("/api/friends", userData, function (data) {
     $("#match-name").text(data.name);
     $("#match-img").attr("src", data.photo);
 
     $("#results-modal").modal("toggle");
   });
+
+  // $.ajax("/api/friends", {
+  //   type: "POST",
+  //   data: userData,
+  // }).then(function (data) {
+  //   $("#match-name").text(data.name);
+  //   $("#match-img").attr("src", data.photo);
+
+  //   $("#results-modal").modal("toggle");
+  // });
 });

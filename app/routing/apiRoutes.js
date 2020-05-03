@@ -10,10 +10,10 @@ module.exports = function (app) {
 
   // API POST Requests
   app.post("/api/friends", function (req, res) {
-    
+    // Var body holds the response from the userInput
     var body = res.req.body
+    // Var that holds the scores from the userInput
     var userScore = body.scores;
-    console.log("Back: " + userScore)
     var scoresArr = [];
     var bestMatch = 0;
 
