@@ -1,6 +1,8 @@
+// Submit button click event
 $("#submit").on("click", function (event) {
   event.preventDefault();
 
+  // Holds user input
   var userData = {
     name: $("#name").val(),
     photo: $("#image").val(),
@@ -18,10 +20,7 @@ $("#submit").on("click", function (event) {
     ],
   };
 
-  console.log("FrontEnd: " + userData.name);
-  console.log("FrontEnd: " + userData.photo);
-  console.log("FrontEnd: " + userData.scores);
-
+  // Post user input to the friends api
   $.post("/api/friends", userData, function (data) {
     $("#match-name").text(data.name);
     $("#match-img").attr("src", data.photo);
@@ -29,13 +28,4 @@ $("#submit").on("click", function (event) {
     $("#results-modal").modal("toggle");
   });
 
-  // $.ajax("/api/friends", {
-  //   type: "POST",
-  //   data: userData,
-  // }).then(function (data) {
-  //   $("#match-name").text(data.name);
-  //   $("#match-img").attr("src", data.photo);
-
-  //   $("#results-modal").modal("toggle");
-  // });
 });
